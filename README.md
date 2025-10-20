@@ -41,7 +41,7 @@ The primary evaluation metric was **$\text{ROC AUC}$** (Area Under the Curve), a
 The curve remains high and far from the random guessing baseline ($\text{AUC}=0.5$), confirming the model's predictive power across all classification thresholds.
 
 
-
+![Receiver Operating Characteristic (ROC) Curve](roc_curve_plot.png)
 
 
 
@@ -52,6 +52,7 @@ The curve remains high and far from the random guessing baseline ($\text{AUC}=0.
 The standardized coefficients of the Logistic Regression model directly translate into business strategy by showing the impact of each feature on churn probability.
 
 ### Top Drivers of Churn Probability
+![Feature Coefficients for Churn Prediction](bar-chart.png)
 
 The analysis reveals the two most critical levers for retention:
 
