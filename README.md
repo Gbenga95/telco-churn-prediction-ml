@@ -54,12 +54,14 @@ The standardized coefficients of the Logistic Regression model directly translat
 ### Top Drivers of Churn Probability
 ![Feature Coefficients for Churn Prediction](bar-chart.png)
 
-The analysis reveals the two most critical levers for retention:
+
+The analysis reveals the critical levers for both retention and risk, directly informing business strategy:
 
 | Feature | Impact | Coefficient ($\beta$) | Actionable Insight |
 | :--- | :--- | :--- | :--- |
-| **Contract\_Month-to-month** | **Strong Positive** (Risk) | (Value from your output) | High-risk factor. Convert these customers to long-term contracts immediately. |
-| **Tenure Months** | **Strong Negative** (Retention) | (Value from your output) | The longer a customer stays, the less likely they are to churn. Focus retention efforts early in the customer lifecycle. |
+| **Tenure Months** | **Strong Negative** (Retention) | $\mathbf{-0.9918}$ | **The strongest stabilizer.** Focus retention efforts *aggressively* early (first year) to increase tenure and lock in loyalty. |
+| **Contract\_Month-to-month** | **Strong Positive** (Risk) | $\mathbf{0.5172}$ | **Highest Risk Factor.** Prioritize converting these customers to long-term contracts (1-year or 2-year) to reduce customer volatility. |
+| **Internet Service\_Fiber optic** | **Strong Positive** (Risk) | $\approx \mathbf{0.40}$ | **Service Issue Alert.** Investigate service quality, reliability, or cost of the premium Fiber Optic product, as this service is actively driving churn. |
 
 
 
